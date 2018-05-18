@@ -4,7 +4,7 @@ import NextEnabledButton from './NextEnabledButton';
 import NextDisabledButton from './NextDisabledButton';
 
 const NextButton = ({ disabled, onPress }) =>
-  (disabled ? <NextDisabledButton disabled /> : <NextEnabledButton onPress={onPress} />);
+  (disabled ? <NextDisabledButton /> : <NextEnabledButton onPress={onPress} />);
 
 NextButton.propTypes = {
   disabled: PropTypes.bool,
