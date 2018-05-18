@@ -1,4 +1,3 @@
-/* eslint import/no-extraneous-dependencies: 0 */
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
@@ -9,10 +8,10 @@ import NoteText from './examples/NoteText';
 import RedEmphasisNoteText from './examples/RedEmphasisNoteText';
 import LinkText from './examples/LinkText';
 
-const stories = storiesOf('Syoto/Texts', module);
+const stories = storiesOf('Texts', module);
 
 stories
-  .add('base text', withInfo('通常の文章で使うテキストコンポーネント')(NormalText))
+  .add('normal text', withInfo('通常の文章で使うテキストコンポーネント')(NormalText))
   .add('emphasis text', withInfo('通常の文章の中で強調したいところに使うテキストコンポーネント')(EmphasisText))
   .add(
     'red emphasis text',
